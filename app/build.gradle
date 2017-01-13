@@ -20,14 +20,14 @@ android {
         }
     }
 
- /*   productFlavors {
+    productFlavors {
         free {
             applicationId "com.digital.builditbigger.free"
         }
         paid {
             applicationId "com.digital.builditbigger.paid"
         }
-    }*/
+    }
 }
 
 dependencies {

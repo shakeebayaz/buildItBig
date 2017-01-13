@@ -8,13 +8,11 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.Gravity;
 import android.view.View;
 
+import com.digital.builditbigger.MainFragment;
 import com.digital.builditbigger.R;
 import com.digital.builditbigger.api.JokeAsyncTask;
 import com.digital.builditbigger.api.OnJokeReceiveListener;
 import com.digital.jokeandroidlib.JokeActivity;
-import com.google.android.gms.ads.AdRequest;
-import com.google.android.gms.ads.AdView;
-
 public class MainActivity extends AppCompatActivity implements View.OnClickListener, OnJokeReceiveListener {
 
 
@@ -24,7 +22,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         DataBindingUtil.setContentView(this,R.layout.activity_main);
-        findViewById(R.id.click).setOnClickListener(this);
+        /*findViewById(R.id.click).setOnClickListener(this);
         AdView mAdView = (AdView) findViewById(R.id.adView);
         // Create an ad request. Check logcat output for the hashed device ID to
         // get test ads on a physical device. e.g.
@@ -32,7 +30,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         AdRequest adRequest = new AdRequest.Builder()
                 .addTestDevice(AdRequest.DEVICE_ID_EMULATOR)
                 .build();
-        mAdView.loadAd(adRequest);
+        mAdView.loadAd(adRequest);*/
+        getSupportFragmentManager().beginTransaction().
+                add(R.id.fragment,new MainFragment()).commit();
     }
 
     @Override
