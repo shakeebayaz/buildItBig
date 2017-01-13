@@ -1652,6 +1652,7 @@ containing a value of this type.
         public static int ifRoom=0x7f0b001e;
         public static int image=0x7f0b0026;
         public static int info=0x7f0b005c;
+        public static int joke_tv=0x7f0b0050;
         public static int line1=0x7f0b0056;
         public static int line3=0x7f0b005a;
         public static int listMode=0x7f0b0009;
@@ -1696,7 +1697,6 @@ containing a value of this type.
         public static int text=0x7f0b005b;
         public static int text2=0x7f0b0059;
         public static int textSpacerNoButtons=0x7f0b0034;
-        public static int textview_joke=0x7f0b0050;
         public static int time=0x7f0b0057;
         public static int title=0x7f0b002a;
         public static int title_template=0x7f0b002f;

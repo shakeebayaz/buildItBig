@@ -12,13 +12,13 @@ import com.google.api.server.spi.config.ApiNamespace;
 import com.digital.jokelib.Joker;
 
 @Api(
-    name = "jokeApi",
-    version = "v1",
-    namespace = @ApiNamespace(
-            ownerDomain = "jokebackend.digital.com",
-            ownerName = "jokebackend.digital.com",
-            packagePath = ""
-    )
+        name = "jokeApi",
+        version = "v1",
+        namespace = @ApiNamespace(
+                ownerDomain = "jokebackend.digital.com",
+                ownerName = "jokebackend.digital.com",
+                packagePath = ""
+        )
 )
 public class JokeEndpoint {
     @ApiMethod(name = "joke")

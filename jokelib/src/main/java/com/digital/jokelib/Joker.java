@@ -2,6 +2,6 @@ package com.digital.jokelib;
 
 public class Joker {
     public String getJoke(){
-        return "This is totally a funny joke";
+        return "You Find it funny joke";
     }
 }

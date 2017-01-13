@@ -22,7 +22,7 @@ public class JokeActivity extends AppCompatActivity {
         Bundle extras = getIntent().getExtras();
         if (extras != null) {
             String joke = extras.getString(JokeActivity.EXTRA_JOKE);
-            ((TextView)findViewById(R.id.textview_joke)).setText(joke);
+            ((TextView)findViewById(R.id.joke_tv)).setText(joke);
         }
 
     }
